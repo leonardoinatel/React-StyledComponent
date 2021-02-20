@@ -61,7 +61,6 @@ function InfoSection({
             </Column1>
             <Column2>
               <ImgWrap></ImgWrap>
-              {console.log(img)}
               <Img src={img} alt={alt} />
             </Column2>
           </InfoRow>
