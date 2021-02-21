@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import {
   FooterContainer,
   FooterLink,
@@ -7,6 +8,12 @@ import {
   FooterLinkTitle,
   FooterLinkWrapper,
   FooterWrap,
+  SocialIcons,
+  SocialIconLink,
+  SocialLogo,
+  SocialMedia,
+  SocialMediaWrap,
+  WebSiteRights
 } from './footerElements';
 
 const Footer = () => {
@@ -47,6 +54,31 @@ const Footer = () => {
             </FooterLinkItems>
           </FooterLinkWrapper>
         </FooterLinkContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to="">
+              dolla
+            </SocialLogo>
+            <WebSiteRights>
+              dolla simbol 2020
+              All rights reserved.
+            </WebSiteRights>
+            <SocialIcons>
+              <SocialIconLink href="/" tanget="_blank" aria-label="Facebook">
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink href="/" tanget="_blank" aria-label="Instagram">
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink href="/" tanget="_blank" aria-label="GitHub">
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink href="/" tanget="_blank" aria-label="Linkedin">
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   );
